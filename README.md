@@ -1,4 +1,4 @@
-🌐 Portafolio Web Personal — Migración a Astro + TailwindCSS
+     🌐 Portafolio Web Personal — Migración a Astro + TailwindCSS
 🧩 1. Descripción General
 Este proyecto consiste en la creación de un portafolio web personal.
 Inicialmente, se desarrolló a partir de una plantilla base HTML/CSS, la cual fue personalizada y posteriormente migrada a Bootstrap.
