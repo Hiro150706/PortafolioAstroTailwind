@@ -1,14 +1,14 @@
-     🌐 Portafolio Web Personal — Migración a Astro + TailwindCSS
-🧩 1. Descripción General
+### 🌐 Portafolio Web Personal — Migración a Astro + TailwindCSS
+## 🧩 1. Descripción General
 Este proyecto consiste en la creación de un portafolio web personal.
 Inicialmente, se desarrolló a partir de una plantilla base HTML/CSS, la cual fue personalizada y posteriormente migrada a Bootstrap.
 Finalmente, se migró a Astro con TailwindCSS, para mejorar la organización, el rendimiento y la facilidad de mantenimiento.
 
-🚀 2. Tecnologías utilizadas
+## 🚀 2. Tecnologías utilizadas
 Etapas del proyecto
 EtapaTecnologías principalesDescripciónVersión inicialHTML5, CSS3, JSPlantilla base brindada por el docenteVersión intermediaBootstrap 5Reestructuración con componentes y diseño responsiveVersión finalAstro, TailwindCSSMigración completa con arquitectura modular y optimización
 
-⚙️ 3. Estructura del proyecto en Astro
+## ⚙️ 3. Estructura del proyecto en Astro
 📁 src/
 ┣ 📁 components/
 ┣ 📁 layouts/
@@ -24,19 +24,19 @@ EtapaTecnologías principalesDescripciónVersión inicialHTML5, CSS3, JSPlantill
 ┗ 📁 public/
   ┗ 📁 img/
 
-🔧 4. Proceso de Migración
-🔹 Paso 1: Análisis de la plantilla original
+## 🔧 4. Proceso de Migración
+# 🔹 Paso 1: Análisis de la plantilla original
 
 Se revisó la estructura del HTML original (etiquetas <header>, <section>, <footer>).
 Se identificaron los estilos repetidos y las partes que podían modularizarse.
 
-🔹 Paso 2: Conversión a Bootstrap
+# 🔹 Paso 2: Conversión a Bootstrap
 
 Se reemplazaron los estilos personalizados por clases de Bootstrap (container, row, col, btn, etc.).
 Se mejoró la adaptabilidad (responsive design).
 Se mantuvo la misma paleta de colores y estructura visual.
 
-🔹 Paso 3: Migración a Astro
+# 🔹 Paso 3: Migración a Astro
 
 Se creó el proyecto Astro con el comando:
 
@@ -46,7 +46,7 @@ Se trasladaron las secciones del portafolio a páginas individuales (index.astro
 Se implementó un layout principal (Base.astro) para reutilizar el encabezado y pie de página.
 Se configuró la carpeta public/ para alojar las imágenes del portafolio.
 
-🔹 Paso 4: Integración de TailwindCSS
+# 🔹 Paso 4: Integración de TailwindCSS
 Instalación y configuración:
 bashnpx astro add tailwind
 
@@ -64,7 +64,7 @@ Tailwind: container mx-auto, grid grid-cols-1 md:grid-cols-2, bg-blue-600 px-4 p
 
 Se añadieron animaciones y transiciones personalizadas para mejorar la experiencia visual.
 
-🔹 Paso 5: Optimización final
+# 🔹 Paso 5: Optimización final
 
 Se eliminaron archivos innecesarios (JS de Bootstrap, archivos CSS individuales por página).
 Se consolidaron todos los estilos personalizados en global.css usando las directivas de Tailwind.
@@ -72,10 +72,10 @@ Se probaron las rutas y la compatibilidad en distintos dispositivos.
 Se mejoró el SEO mediante el uso de metadatos en Base.astro.
 
 
-✨ 5. Cambios principales realizados
+## ✨ 5. Cambios principales realizados
 ElementoAntes (Bootstrap)Después (Astro + Tailwind)Estructura HTMLArchivos .html separadosPáginas .astro con sistema de enrutamientoEstilosArchivos .css y clases BootstrapClases utilitarias de Tailwind y global.cssNavegaciónNavbar de BootstrapNavbar personalizada en Base.astroAnimacionesLimitadasTransiciones con hover:, transform, transitionLayoutRepetido en cada páginaReutilización con Base.astro y sistema de slotsCSS5 archivos individuales1 archivo global.css centralizado
 
-📋 6. Detalle de archivos migrados
+## 📋 6. Detalle de archivos migrados
 Layout Base (src/layouts/Base.astro)
 Cambios implementados:
 
@@ -127,7 +127,7 @@ Validación visual con estados de error
 Botón de envío con loading state
 
 
-🎨 7. Sistema de diseño implementado
+## 🎨 7. Sistema de diseño implementado
 Paleta de colores
 
 Primario: blue-600 (#2563eb), blue-700 (#1d4ed8)
@@ -148,7 +148,7 @@ Contenedores: container mx-auto px-4 md:px-6
 Elementos: Múltiplos de 4 (4, 8, 12, 16, 24, 32)
 
 
-📱 8. Responsividad
+## 📱 8. Responsividad
 Breakpoints utilizados
 
 sm: 640px - Ajustes menores
@@ -161,7 +161,7 @@ Todas las clases base están optimizadas para móvil, con modificadores progress
 html<!-- Ejemplo -->
 <div class="text-center md:text-left grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-⚡ 9. Optimizaciones realizadas
+## ⚡ 9. Optimizaciones realizadas
 Performance
 
 CSS purgado automáticamente por Tailwind (solo las clases utilizadas)
@@ -184,7 +184,7 @@ Sistema de diseño consistente con Tailwind
 Componentes modulares fáciles de actualizar
 
 
-🛠️ 10. Comandos disponibles
+## 🛠️ 10. Comandos disponibles
 bash# Instalar dependencias
 npm install
 
@@ -197,7 +197,7 @@ npm run build
 # Preview del build
 npm run preview
 
-📦 11. Dependencias del proyecto
+## 📦 11. Dependencias del proyecto
 Principales
 
 astro: ^3.0.0 - Framework principal
@@ -210,7 +210,7 @@ autoprefixer: ^10.4.19 - Prefijos CSS automáticos
 postcss: ^8.4.38 - Procesador CSS
 
 
-🚀 12. Configuración de despliegue
+## 🚀 12. Configuración de despliegue
 Vercel
 Archivo vercel.json configurado:
 json{
@@ -220,7 +220,7 @@ json{
 Variables de entorno
 No se requieren variables de entorno para el proyecto básico.
 
-✅ 13. Checklist de migración completada
+## ✅ 13. Checklist de migración completada
 
  Proyecto Astro inicializado
  Tailwind CSS instalado y configurado
@@ -236,7 +236,7 @@ No se requieren variables de entorno para el proyecto básico.
  Documentación actualizada
 
 
-📝 14. Conclusiones
+## 📝 14. Conclusiones
 Ventajas de la migración
 
 Mejor organización: Astro permitió una estructura modular clara con separación de layouts, páginas y estilos.
